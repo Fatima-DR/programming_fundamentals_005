@@ -32,7 +32,7 @@ describe.only("Object.size", () => {
   });
 });
 
-describe("Object.min", () => {
+describe.only("Object.min", () => {
   test("returns the smallest number of all values in an object", () => {
     expect(
       Object.min({
@@ -54,27 +54,27 @@ describe("Object.min", () => {
   });
 });
 
-// describe("Object.max", () => {
-//   test("returns the largest number of all values in an object", () => {
-//     expect(
-//       Object.max({
-//         a: 4,
-//         b: 3,
-//         c: 2,
-//         d: 9
-//       })
-//     ).toBe(9);
+describe.only("Object.max", () => {
+  test("returns the largest number of all values in an object", () => {
+    expect(
+      Object.max({
+        a: 4,
+        b: 3,
+        c: 2,
+        d: 9
+      })
+    ).toBe(9);
 
-//     expect(
-//       Object.max({
-//         a: 434,
-//         b: 342,
-//         c: 200,
-//         d: 9
-//       })
-//     ).toBe(434);
-//   });
-// });
+    expect(
+      Object.max({
+        a: 434,
+        b: 342,
+        c: 200,
+        d: 9
+      })
+    ).toBe(434);
+  });
+});
 
 // describe("Object.clone", () => {
 //   test("returns a copy of the object", () => {
