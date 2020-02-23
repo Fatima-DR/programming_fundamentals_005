@@ -136,32 +136,32 @@ describe.only("Object.get", () => {
   });
 });
 
-// describe("Object.has", () => {
-//   test("returns true if the object has the give key", () => {
-//     const obj1 = { name: "Sally", location: "Leeds" };
-//     expect(Object.has(obj1, "name")).toBe(true);
-//     expect(Object.has(obj1, "location")).toBe(true);
-//   });
+describe.only("Object.has", () => {
+  test("returns true if the object has the give key", () => {
+    const obj1 = { name: "Sally", location: "Leeds" };
+    expect(Object.has(obj1, "name")).toBe(true);
+    expect(Object.has(obj1, "location")).toBe(true);
+  });
 
-//   test("returns false if the object does not have the give key", () => {
-//     const obj1 = { name: "Sally", location: "Leeds" };
-//     expect(Object.has(obj1, "postcode")).toBe(false);
-//     expect(Object.has(obj1, "address")).toBe(false);
-//   });
+  test("returns false if the object does not have the give key", () => {
+    const obj1 = { name: "Sally", location: "Leeds" };
+    expect(Object.has(obj1, "postcode")).toBe(false);
+    expect(Object.has(obj1, "address")).toBe(false);
+  });
 
-//   test("returns true if the object has the given key, but it is a falsey value", () => {
-//     const obj1 = {
-//       name: "Sally",
-//       location: "Leeds",
-//       address: null,
-//       signedIn: false
-//     };
-//     expect(Object.has(obj1, "signedIn")).toBe(true);
-//     expect(Object.has(obj1, "address")).toBe(true);
-//   });
-// });
+  test("returns true if the object has the given key, but it is a falsey value", () => {
+    const obj1 = {
+      name: "Sally",
+      location: "Leeds",
+      address: null,
+      signedIn: false
+    };
+    expect(Object.has(obj1, "signedIn")).toBe(true);
+    expect(Object.has(obj1, "address")).toBe(true);
+  });
+});
 
-// describe("Object.sum", () => {
+// describe.only("Object.sum", () => {
 //   test("returns the sum of all the values when all values are numbers", () => {
 //     const obj = {
 //       a: 1,
@@ -217,18 +217,18 @@ describe.only("Object.get", () => {
 //     expect(Object.invert(original)).toEqual(expected);
 //   });
 
-//   test("also works with more complex values", () => {
-//     const original = {
-//       name: "Sally",
-//       location: "Leeds",
-//       address: "5 Hull Road, Beeston"
-//     };
+  // test("also works with more complex values", () => {
+  //   const original = {
+  //     name: "Sally",
+  //     location: "Leeds",
+  //     address: "5 Hull Road, Beeston"
+  //   };
 
-//     const expected = {
-//       Sally: "name",
-//       Leeds: "location",
-//       "5 Hull Road, Beeston": "address"
-//     };
+  //   const expected = {
+  //     Sally: "name",
+  //     Leeds: "location",
+  //     "5 Hull Road, Beeston": "address"
+  //   };
 
 //     expect(Object.invert(original)).toEqual(expected);
 //   });
