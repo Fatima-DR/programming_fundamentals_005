@@ -90,7 +90,7 @@ describe.only("Object.clone", () => {
   });
 });
 
-describe("Object.get", () => {
+describe.only("Object.get", () => {
   test("returns the value for the given key", () => {
     expect(
       Object.get(
