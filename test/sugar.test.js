@@ -76,65 +76,65 @@ describe.only("Object.max", () => {
   });
 });
 
-// describe("Object.clone", () => {
-//   test("returns a copy of the object", () => {
-//     const person1 = {
-//       name: "Sally",
-//       location: "Leeds"
-//     };
-//     const person2 = Object.clone(person1);
+describe.only("Object.clone", () => {
+  test("returns a copy of the object", () => {
+    const person1 = {
+      name: "Sally",
+      location: "Leeds"
+    };
+    const person2 = Object.clone(person1);
 
-//     expect(person2 === person1).toBe(false);
-//     expect(person2.name).toBe("Sally");
-//     expect(person2.location).toBe("Leeds");
-//   });
-// });
+    expect(person2 === person1).toBe(false);
+    expect(person2.name).toBe("Sally");
+    expect(person2.location).toBe("Leeds");
+  });
+});
 
-// describe("Object.get", () => {
-//   test("returns the value for the given key", () => {
-//     expect(
-//       Object.get(
-//         {
-//           name: "Sally",
-//           location: "Leeds"
-//         },
-//         "name"
-//       )
-//     ).toBe("Sally");
+describe.only("Object.get", () => {
+  test("returns the value for the given key", () => {
+    expect(
+      Object.get(
+        {
+          name: "Sally",
+          location: "Leeds"
+        },
+        "name"
+      )
+    ).toBe("Sally");
 
-//     expect(
-//       Object.get(
-//         {
-//           name: "Sally",
-//           location: "Leeds"
-//         },
-//         "location"
-//       )
-//     ).toBe("Leeds");
-//   });
+    expect(
+      Object.get(
+        {
+          name: "Sally",
+          location: "Leeds"
+        },
+        "location"
+      )
+    ).toBe("Leeds");
+  });
 
-//   test("returns undefined if the key is not found", () => {
-//     expect(
-//       Object.get(
-//         {
-//           name: "Sally",
-//           location: "Leeds"
-//         },
-//         "address"
-//       )
-//     ).toBe(undefined);
+  test("returns undefined if the key is not found", () => {
+    expect(
+      Object.get(
+        {
+          name: "Sally",
+          location: "Leeds"
+        },
+        "address"
+      )
+    ).toBe(undefined);
 
-//     expect(
-//       Object.get(
-//         {
-//           name: "Sally",
-//           location: "Leeds"
-//         },
-//         "age"
-//       )
-//     ).toBe(undefined);
-//   });
-// });
+    expect(
+      Object.get(
+        {
+          name: "Sally",
+          location: "Leeds"
+        },
+        "age"
+      )
+    ).toBe(undefined);
+  });
+});
 
 // describe("Object.has", () => {
 //   test("returns true if the object has the give key", () => {
