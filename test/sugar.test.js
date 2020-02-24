@@ -161,45 +161,45 @@ describe.only("Object.has", () => {
   });
 });
 
-// describe.only("Object.sum", () => {
-//   test("returns the sum of all the values when all values are numbers", () => {
-//     const obj = {
-//       a: 1,
-//       b: 4,
-//       c: 10
-//     };
-//     expect(Object.sum(obj)).toBe(15);
-//   });
+describe.only("Object.sum", () => {
+  test("returns the sum of all the values when all values are numbers", () => {
+    const obj = {
+      a: 1,
+      b: 4,
+      c: 10
+    };
+    expect(Object.sum(obj)).toBe(15);
+  });
 
-//   test("returns 0 when the object has no key-value pairs", () => {
-//     const obj = {};
-//     expect(Object.sum(obj)).toBe(0);
-//   });
+  test("returns 0 when the object has no key-value pairs", () => {
+    const obj = {};
+    expect(Object.sum(obj)).toBe(0);
+  });
 
-//   test("ignores non-number values", () => {
-//     const obj = {
-//       a: 1,
-//       b: 4,
-//       c: false,
-//       d: 10,
-//       e: "cat"
-//     };
-//     expect(Object.sum(obj)).toBe(15);
-//   });
+  test("ignores non-number values", () => {
+    const obj = {
+      a: 1,
+      b: 4,
+      c: false,
+      d: 10,
+      e: "cat"
+    };
+    expect(Object.sum(obj)).toBe(15);
+  });
 
-//   test("returns 0 if no values are numbers", () => {
-//     const obj = {
-//       a: "dog",
-//       b: "foo",
-//       c: "bar",
-//       d: "snail",
-//       e: "cat"
-//     };
-//     expect(Object.sum(obj)).toBe(0);
-//   });
-// });
+  test("returns 0 if no values are numbers", () => {
+    const obj = {
+      a: "dog",
+      b: "foo",
+      c: "bar",
+      d: "snail",
+      e: "cat"
+    };
+    expect(Object.sum(obj)).toBe(0);
+  });
+});
 
-// describe("Object.invert", () => {
+// describe.only("Object.invert", () => {
 //   test("returns a new object which is the inversion of the given object", () => {
 //     const original = {
 //       name: "Sally",
@@ -217,18 +217,18 @@ describe.only("Object.has", () => {
 //     expect(Object.invert(original)).toEqual(expected);
 //   });
 
-  // test("also works with more complex values", () => {
-  //   const original = {
-  //     name: "Sally",
-  //     location: "Leeds",
-  //     address: "5 Hull Road, Beeston"
-  //   };
+//   test("also works with more complex values", () => {
+//     const original = {
+//       name: "Sally",
+//       location: "Leeds",
+//       address: "5 Hull Road, Beeston"
+//     };
 
-  //   const expected = {
-  //     Sally: "name",
-  //     Leeds: "location",
-  //     "5 Hull Road, Beeston": "address"
-  //   };
+//     const expected = {
+//       Sally: "name",
+//       Leeds: "location",
+//       "5 Hull Road, Beeston": "address"
+//     };
 
 //     expect(Object.invert(original)).toEqual(expected);
 //   });
