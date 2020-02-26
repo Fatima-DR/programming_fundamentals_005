@@ -199,78 +199,78 @@ describe.only("Object.sum", () => {
   });
 });
 
-// describe.only("Object.invert", () => {
-//   test("returns a new object which is the inversion of the given object", () => {
-//     const original = {
-//       name: "Sally",
-//       location: "Leeds"
-//     };
+describe.only("Object.invert", () => {
+  test("returns a new object which is the inversion of the given object", () => {
+    const original = {
+      name: "Sally",
+      location: "Leeds"
+    };
 
-//     const expected = {
-//       Sally: "name",
-//       Leeds: "location"
-//     };
+    const expected = {
+      Sally: "name",
+      Leeds: "location"
+    };
 
-//     // Checking we are getting a new object created
-//     expect(Object.invert(original) === original).toBe(false);
+    // Checking we are getting a new object created
+    expect(Object.invert(original) === original).toBe(false);
 
-//     expect(Object.invert(original)).toEqual(expected);
-//   });
+    expect(Object.invert(original)).toEqual(expected);
+  });
 
-//   test("also works with more complex values", () => {
-//     const original = {
-//       name: "Sally",
-//       location: "Leeds",
-//       address: "5 Hull Road, Beeston"
-//     };
+  test("also works with more complex values", () => {
+    const original = {
+      name: "Sally",
+      location: "Leeds",
+      address: "5 Hull Road, Beeston"
+    };
 
-//     const expected = {
-//       Sally: "name",
-//       Leeds: "location",
-//       "5 Hull Road, Beeston": "address"
-//     };
+    const expected = {
+      Sally: "name",
+      Leeds: "location",
+      "5 Hull Road, Beeston": "address"
+    };
 
-//     expect(Object.invert(original)).toEqual(expected);
-//   });
-// });
+    expect(Object.invert(original)).toEqual(expected);
+  });
+});
 
-// describe("Object.addAll", () => {
-//   test("Creates a new object out of all the objects in an array", () => {
-//     const objects = [{ a: 1 }, { b: 3 }, { c: "foo" }];
+describe.only("Object.addAll", () => {
+  test("Creates a new object out of all the objects in an array", () => {
+    const objects = [{ a: 1 }, { b: 3 }, { c: "foo" }];
 
-//     const expected = {
-//       a: 1,
-//       b: 3,
-//       c: "foo"
-//     };
+    const expected = {
+      a: 1,
+      b: 3,
+      c: "foo"
+    };
 
-//     expect(Object.addAll(objects)).toEqual(expected);
-//   });
+    expect(Object.addAll(objects)).toEqual(expected);
+  });
 
-//   test("Later objects in the array with the same keys as earlier objects overwrite previous ones", () => {
-//     const objects = [{ a: 1 }, { b: 3 }, { a: "foo" }];
+  test("Later objects in the array with the same keys as earlier objects overwrite previous ones", () => {
+    const objects = [{ a: 1 }, { b: 3 }, { a: "foo" }];
 
-//     const expected = {
-//       a: "foo",
-//       b: 3
-//     };
+    const expected = {
+      a: "foo",
+      b: 3
+    };
 
-//     expect(Object.addAll(objects)).toEqual(expected);
-//   });
+    expect(Object.addAll(objects)).toEqual(expected);
+  });
 
-//   test("Works with objects that have multiple key-value pairs", () => {
-//     const objects = [{ a: 1 }, { b: 3 }, { c: "foo", d: "bar" }];
+  test("Works with objects that have multiple key-value pairs", () => {
+    const objects = [{ a: 1 }, { b: 3 }, { c: "foo", d: "bar" }];
 
-//     const expected = {
-//       a: 1,
-//       b: 3,
-//       c: "foo",
-//       d: "bar"
-//     };
+    const expected = {
+      a: 1,
+      b: 3,
+      c: "foo",
+      d: "bar"
+    };
 
-//     expect(Object.addAll(objects)).toEqual(expected);
-//   });
-// });
+    expect(Object.addAll(objects)).toEqual(expected);
+  });
+});
 
 // describe("Object.find", () => {
 //   test("returns the found value if the object contains a value that matches the matcher function", () => {
